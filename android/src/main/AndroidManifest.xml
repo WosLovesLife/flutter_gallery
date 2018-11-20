@@ -1,0 +1,21 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.wosloveslife.gallery">
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+
+        <activity
+            android:name="cn.finalteam.rxgalleryfinal.ui.activity.MediaActivity"
+            android:exported="true"
+            android:theme="@style/Theme_Light"/>
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+</manifest>
